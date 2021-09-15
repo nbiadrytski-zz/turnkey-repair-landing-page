@@ -472,48 +472,66 @@ a {
   padding: 13px 0;
 }
 
-/* main section */
-.section-main {
-  background-image: url("../images/main.jpg");
-  background-size: cover;
-  padding-top: 191px;
-  padding-bottom: 191px;
-  position: relative;
+@font-face {
+  font-family: "NunitoSansItalic";
+  src: url("../fonts/NunitoSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
 }
-.section-main__content {
+@font-face {
+  font-family: "NunitoSans";
+  src: url("../fonts/NunitoSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "YesevaOne";
+  src: url("../fonts/YesevaOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.main {
+  background-image: url("../images/main.jpg");
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main__content {
   position: relative;
   z-index: 1;
+  padding-top: 182px;
+  padding-bottom: 196px;
 }
-.section-main__title, .section-main__paragraph {
+.main__title, .main__paragraph {
   margin: 0;
   width: 514px;
   color: #FFFFFF;
 }
-.section-main__title {
+.main__title {
   font-family: Yeseva One, sans-serif;
   font-size: 40px;
   line-height: 53px;
   text-transform: uppercase;
 }
-.section-main__city {
+.main__city {
   color: #E3B873;
 }
-.section-main__paragraph {
+.main__paragraph {
   margin-top: 19px;
   font-size: 22px;
   line-height: 36px;
 }
-.section-main__textline {
+.main__textline {
   content: "\a";
   white-space: pre;
 }
-.section-main__button {
+.main__button {
   margin-top: 40px;
   width: 207px;
   margin-right: 20px;
   padding: 19px 0;
 }
-.section-main__overlay {
+.main__overlay {
   content: "";
   position: absolute;
   top: 0;
