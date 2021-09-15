@@ -1,0 +1,58 @@
+@import "variables";
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  font-family: $noonita;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  background: $yellow;
+  box-shadow: 0 5px 15px rgba(227, 184, 115, 0.2);
+  border-radius: 2px;
+  outline: 0;
+  // default transparent border; when on hover, the other elements don't move
+  border: 1px solid transparent;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: $noonita-italic;
+  cursor: pointer;
+
+  &:hover {
+    background: transparent;
+    border: 1px solid;
+  }
+}
+
+// Flexbox helper class
+.flex {
+  display: flex;
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-sb-ai-c {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}
