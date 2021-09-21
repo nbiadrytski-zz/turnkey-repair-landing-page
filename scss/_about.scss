@@ -1,7 +1,15 @@
 @import "variables";
+@import "mixins";
 
 .about {
   background-color: $black;
+
+  @include breakpoint(mobile) {
+
+    &__menu, .button_request {
+      display: none;
+    }
+  }
 
   &__container {
     font-size: 11px;

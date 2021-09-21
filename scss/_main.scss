@@ -1,6 +1,10 @@
 @import "variables";
+@import "mixins";
 
 .main {
+  @include breakpoint(mobile) {
+    background-image: url("../images/main-mobile.jpg");
+  }
   background-image: url("../images/main.jpg");
   position: relative;
   background-size: cover;
@@ -17,10 +21,17 @@
     margin: 0;
     width: 514px;
     color: $white;
+    @include breakpoint(mobile) {
+      max-width: $mobile-content-max-width;
+    }
   }
 
   &__title {
     font-family: Yeseva One, sans-serif;
+    @include breakpoint(mobile) {
+      font-size: 23px;
+      line-height: 31px;
+    }
     font-size: 40px;
     line-height: 53px;
     text-transform: uppercase;
@@ -32,6 +43,10 @@
 
   &__paragraph {
     margin-top: 19px;
+    @include breakpoint(mobile) {
+      font-size: 14px;
+      line-height: 19px;
+    }
     font-size: 22px;
     line-height: 36px;
   }
@@ -43,9 +58,22 @@
 
   &__button {
     margin-top: 40px;
+    @include breakpoint(mobile) {
+      width: $mobile-content-max-width;
+    }
     width: 207px;
     margin-right: 20px;
     padding: 19px 0;
+  }
+
+  &__app-button:before {
+    content: "SUBMIT YOUR APPLICATION";
+  }
+  // change button text from "SUBMIT YOUR APPLICATION" to "APPLICATION"
+  @include breakpoint(mobile) {
+    &__app-button:before {
+      content: "APPLICATION";
+    }
   }
 
   &__overlay {

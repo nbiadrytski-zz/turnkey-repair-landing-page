@@ -1,7 +1,16 @@
 @import "variables";
+@import "mixins";
 
 .projects {
   background-color: $black;
+
+  @include breakpoint(mobile) {
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 
   &__content {
     height: 1100px;

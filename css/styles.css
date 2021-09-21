@@ -505,8 +505,35 @@ a {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "NunitoSansItalic";
+  src: url("../fonts/NunitoSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "NunitoSans";
+  src: url("../fonts/NunitoSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "YesevaOne";
+  src: url("../fonts/YesevaOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 .about {
   background-color: #131313;
+}
+@media (max-width: 1299px) {
+  .about .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+  .about__menu, .about .button_request {
+    display: none;
+  }
 }
 .about__container {
   font-size: 11px;
@@ -553,11 +580,38 @@ a {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "NunitoSansItalic";
+  src: url("../fonts/NunitoSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "NunitoSans";
+  src: url("../fonts/NunitoSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "YesevaOne";
+  src: url("../fonts/YesevaOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 .main {
   background-image: url("../images/main.jpg");
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media (max-width: 1299px) {
+  .main {
+    background-image: url("../images/main-mobile.jpg");
+  }
+  .main .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
 }
 .main__content {
   position: relative;
@@ -570,11 +624,30 @@ a {
   width: 514px;
   color: #FFFFFF;
 }
+@media (max-width: 1299px) {
+  .main__title, .main__paragraph {
+    max-width: 340px;
+  }
+  .main__title .container, .main__paragraph .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
 .main__title {
   font-family: Yeseva One, sans-serif;
   font-size: 40px;
   line-height: 53px;
   text-transform: uppercase;
+}
+@media (max-width: 1299px) {
+  .main__title {
+    font-size: 23px;
+    line-height: 31px;
+  }
+  .main__title .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
 }
 .main__city {
   color: #E3B873;
@@ -583,6 +656,16 @@ a {
   margin-top: 19px;
   font-size: 22px;
   line-height: 36px;
+}
+@media (max-width: 1299px) {
+  .main__paragraph {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .main__paragraph .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
 }
 .main__textline {
   content: "\a";
@@ -593,6 +676,27 @@ a {
   width: 207px;
   margin-right: 20px;
   padding: 19px 0;
+}
+@media (max-width: 1299px) {
+  .main__button {
+    width: 340px;
+  }
+  .main__button .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+.main__app-button:before {
+  content: "SUBMIT YOUR APPLICATION";
+}
+@media (max-width: 1299px) {
+  .main .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+  .main__app-button:before {
+    content: "APPLICATION";
+  }
 }
 .main__overlay {
   content: "";
@@ -622,8 +726,36 @@ a {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "NunitoSansItalic";
+  src: url("../fonts/NunitoSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "NunitoSans";
+  src: url("../fonts/NunitoSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "YesevaOne";
+  src: url("../fonts/YesevaOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 .projects {
   background-color: #131313;
+}
+@media (max-width: 1299px) {
+  .projects .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+  .projects__content {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .projects__content {
   height: 1100px;
