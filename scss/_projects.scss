@@ -5,7 +5,6 @@
   background-color: $black;
 
   @include breakpoint(mobile) {
-
     &__content {
       display: flex;
       flex-direction: column;
@@ -13,10 +12,15 @@
   }
 
   &__content {
-    height: 1100px;
+    height: 988px;
   }
 
   &__title {
+    @include breakpoint(mobile) {
+      padding-top: 36px;
+      text-align: center;
+      font-size: 22px;
+    }
     font-family: $yeseva;
     font-size: 27px;
     line-height: 37px;
@@ -28,12 +32,25 @@
   }
 
   &__paragraph {
+    @include breakpoint(mobile) {
+      max-width: $mobile-content-max-width;
+      padding-top: 20px;
+      text-align: center;
+      font-size: 11px;
+    }
     width: 442px;
     margin: 0 50px 0 0;
     padding-top: 34px;
     color: $white;
     font-size: 14px;
     line-height: 27px;
+  }
+
+  &__img-mobile {
+    padding-top: 70px;
+    @include breakpoint(desktop) {
+      display: none;
+    }
   }
 
   &__table {
@@ -60,6 +77,10 @@
   &__column-title {
     font-family: $yeseva;
     color: $yellow;
+    @include breakpoint(mobile) {
+      font-size: 14px;
+      line-height: 19px;
+    }
     font-size: 18px;
     line-height: 25px;
     text-transform: uppercase;
@@ -68,8 +89,18 @@
   &__column-value {
     margin-top: 9px;
     color: $white;
+    @include breakpoint(mobile) {
+      font-size: 11px;
+      line-height: 15px;
+    }
     font-size: 13px;
     line-height: 21px;
+  }
+
+  &__right {
+    @include breakpoint(mobile) {
+      display: none;
+    }
   }
 
   &__menu {
@@ -96,6 +127,9 @@
   }
 
   &__arrows {
+    @include breakpoint(mobile) {
+      display: none;
+    }
     margin-top: 71px;
     width: max-content;
     display: flex;

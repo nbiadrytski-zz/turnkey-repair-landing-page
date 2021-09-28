@@ -13,6 +13,10 @@
   &__content {
     position: relative;
     z-index: 1;
+    @include breakpoint(mobile) {
+      padding-top: 85px;
+      padding-bottom: 61px;
+    }
     padding-top: 182px;
     padding-bottom: 196px;
   }
