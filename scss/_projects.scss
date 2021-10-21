@@ -12,7 +12,10 @@
   }
 
   &__content {
-    height: 988px;
+    @include breakpoint(mobile) {
+      height: 988px;
+    }
+    height: 1080px;
   }
 
   &__title {

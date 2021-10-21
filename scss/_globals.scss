@@ -132,7 +132,22 @@ a {
     justify-content: center;
   }
 
+  &-jc-fe {
+    justify-content: flex-end;
+  }
+
   &-ai-c {
     align-items: center;
+  }
+}
+
+.icon-container {
+
+  &__left {
+    margin-right: 9px;
+  }
+
+  &__right {
+    margin-left: 9px;
   }
 }

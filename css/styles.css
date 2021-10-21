@@ -520,8 +520,18 @@ a {
 .flex-jc-c {
   justify-content: center;
 }
+.flex-jc-fe {
+  justify-content: flex-end;
+}
 .flex-ai-c {
   align-items: center;
+}
+
+.icon-container__left {
+  margin-right: 9px;
+}
+.icon-container__right {
+  margin-left: 9px;
 }
 
 @font-face {
@@ -805,7 +815,16 @@ a {
   }
 }
 .projects__content {
-  height: 988px;
+  height: 1080px;
+}
+@media (max-width: 1299px) {
+  .projects__content {
+    height: 988px;
+  }
+  .projects__content .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
 }
 .projects__title {
   font-family: "YesevaOne", sans-serif;
@@ -1058,12 +1077,6 @@ a {
     margin: 0 auto;
   }
 }
-.control__camera-left {
-  margin-right: 9px;
-}
-.control__camera-right {
-  margin-left: 9px;
-}
 @media (max-width: 1299px) {
   .control__video-img {
     display: none;
@@ -1237,6 +1250,128 @@ a {
   .control__checkbox {
     order: 1;
   }
+}
+
+@font-face {
+  font-family: "NunitoSansItalic";
+  src: url("../fonts/NunitoSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "NunitoSans";
+  src: url("../fonts/NunitoSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "YesevaOne";
+  src: url("../fonts/YesevaOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NunitoSansItalic";
+  src: url("../fonts/NunitoSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "NunitoSans";
+  src: url("../fonts/NunitoSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "YesevaOne";
+  src: url("../fonts/YesevaOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.repair {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.repair__icon-container {
+  margin-bottom: 20px;
+}
+.repair__title {
+  color: #181818;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  font-family: "YesevaOne", sans-serif;
+}
+.repair__demo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+@media (max-width: 1299px) {
+  .repair__demo {
+    flex-direction: column;
+    align-items: center;
+  }
+  .repair__demo .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+.repair__card {
+  width: 392px;
+  margin-bottom: 80px;
+}
+.repair__card-container {
+  width: 72%;
+  background-color: #FFFFFF;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+  text-align: left;
+  padding-top: 25px;
+  padding-left: 8%;
+  padding-bottom: 50px;
+  margin: 360px auto 0;
+  position: relative;
+}
+.repair__card1 {
+  background: url("../images/blue-room.jpg") no-repeat;
+}
+.repair__card2 {
+  background: url("../images/light-room.jpg") no-repeat;
+}
+.repair__card3 {
+  background: url("../images/dark-room.jpg") no-repeat;
+}
+.repair__subtitle {
+  font-family: "YesevaOne", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  color: #131313;
+}
+.repair__description {
+  padding-left: 5%;
+  font-size: 15px;
+  line-height: 25px;
+  color: #959595;
+}
+.repair__price-container {
+  display: block;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  background: #E3B873;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  width: 75%;
+  height: 51px;
+}
+.repair__price {
+  color: #FFFFFF;
+  font-family: "YesevaOne", sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 15px;
 }
 
 /*# sourceMappingURL=styles.css.map */
